@@ -1,0 +1,205 @@
+.wrapper {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar-brand {
+    img {
+        height: 60px;
+    }
+}
+
+.nav-icons {
+    .nav-item {
+        display: inline-block;
+        font-size: 30px;
+    }
+}
+
+.masthead-video {
+    display: flex;
+}
+
+.masthead-video video {
+    width: 100%;
+    /*max-width: 90%;*/
+    border-radius: 8px;
+}
+
+.about-items {
+    img {
+        width: 100%;
+        border-radius: 8px;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+}
+
+.masthead-advantage {
+    font-size: 1.3rem;
+}
+
+.copy-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.copy-section button {
+    margin-left: 10px;
+}
+
+.icon-link span {
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+}
+
+.dex-screener-icon {
+    background-image: url("../assets/img/dexscreener-white.svg");
+    background-size: 95%;
+}
+
+.solana-icon {
+    background-image: url("../assets/img/solana-white.svg");
+    background-size: 140%;
+}
+
+.telegram-icon {
+    background-image: url("../assets/img/telegram-white.svg");
+    background-size: 100%;
+}
+
+.twitter-icon {
+    background-image: url("../assets/img/twitter-white.svg");
+    background-size: 100%;
+}
+
+.footer-icons {
+    ul {
+        list-style: none;
+        display: flex;
+        justify-content: end;
+    }
+}
+
+.copyright-area {
+    display: flex;
+    align-items: center;
+    font-size: 1.3rem;
+}
+
+.smart-contract-area {
+    text-align: center;
+
+    h6 {
+        font-size: 1.5rem;
+    }
+}
+
+.about-text {
+    font-size: 1.3rem;
+}
+
+.btn-outline {
+    border: 2px solid #FFF;
+}
+
+@media (max-width: 992px) {
+    .copyright-area {
+        justify-content: center;
+    }
+
+    .footer-icons {
+        ul {
+            justify-content: center;
+        }
+    }
+
+    .nav-icons {
+        flex-direction: row;
+    }
+}
+
+
+.dark {
+    * {
+        color: #FFF;
+    }
+
+    .nav-link {
+        border: 2px solid transparent;
+    }
+
+    .nav-link:hover {
+        border-bottom: 2px solid #FFF;
+    }
+
+    .icon-link {
+        padding: 10px;
+        margin: 5px;
+        display: flex;
+        align-items: center;
+    }
+
+    .icon-link:hover {
+        border: 2px solid transparent;
+        opacity: .5;
+    }
+}
+
+.light {
+    * {
+        color: #212121 !important;
+    }
+
+    .nav-link {
+        border: 2px solid transparent;
+    }
+
+    .nav-link:hover {
+        border-bottom: 2px solid #212121;
+    }
+
+    .icon-link {
+        padding: 10px;
+        margin: 5px;
+        display: flex;
+        align-items: center;
+    }
+
+    .icon-link:hover {
+        border: 2px solid transparent;
+        opacity: .5;
+    }
+
+    .dex-screener-icon {
+        background-image: url("../assets/img/dexscreener-black.svg");
+        background-size: 95%;
+    }
+
+    .solana-icon {
+        background-image: url("../assets/img/solana-black.svg");
+        background-size: 140%;
+    }
+
+    .telegram-icon {
+        background-image: url("../assets/img/telegram-black.svg");
+        background-size: 100%;
+    }
+
+    .twitter-icon {
+        background-image: url("../assets/img/twitter-black.svg");
+        background-size: 100%;
+    }
+
+    .btn-outline {
+        border: 2px solid #212121;
+    }
+}
